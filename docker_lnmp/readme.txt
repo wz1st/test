@@ -1,7 +1,7 @@
 user: docker-compose up -d
 
 http://ip:8888
-mysqlhost:   mysql_server    or  your linux_ip
+mysqlhost:   mysql_server    or  your ip
 mysqluser/pawd:  root/root
 
 
