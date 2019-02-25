@@ -1,0 +1,24 @@
+mysql:
+    image: mysql:5.6
+    ports:
+        - "3306:3306"
+    volumes:
+        - ./mysql/:/var/lib/mysql/
+    environment:
+        - MYSQL_ROOT_PASSWORD=root
+    container_name : mysql_server
+phpfpm: 
+    build: ./phpfpm
+    ports:
+        - "9000:9000"
+    links:
+        - "mysql"
+    restart: always
+nginx:
+    build: ./nginx
+    links:
+        - "phpfpm"
+    ports:
+        - "8888:80"
+    volumes:
+        - ./www/:/var/www/html/
