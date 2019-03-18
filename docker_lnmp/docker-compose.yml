@@ -11,6 +11,8 @@ phpfpm:
     build: ./phpfpm
     ports:
         - "9000:9000"
+    volumes:
+        - ./www/:/var/www/html/
     links:
         - "mysql"
     restart: always
