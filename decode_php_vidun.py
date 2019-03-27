@@ -21,12 +21,12 @@ def codewrite(filename):
 	with open(filename, 'wb') as f:
 		f.write(devidun(code[2], r1, r2))
 # codewrite('admin.php')
-def path(path):
+def getdir(path):
 	parents = os.listdir(path)
 	for parent in parents:
 		child = os.path.join(path,parent)
 		if os.path.isdir(child):
-			path(child)
+			getdir(child)
 		else:
 			if child.split('.')[-1] == 'php':
 				try:
@@ -36,4 +36,4 @@ def path(path):
 				except IndexError:
 					pass
 
-path('.')
+getdir('.')
