@@ -26,7 +26,7 @@ def path(path):
 	for parent in parents:
 		child = os.path.join(path,parent)
 		if os.path.isdir(child):
-			gci(child)
+			path(child)
 		else:
 			if child.split('.')[-1] == 'php':
 				try:
