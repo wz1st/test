@@ -19,9 +19,9 @@ T-Pot        #T-Pot多蜜罐平台直接提供一个系统iso，里面使用dock
 
 #### Honeyd安装方法
 平台：Ubuntu
->git clone https://github.com/DataSoft/Honeyd.git  
-sudo apt-get install libevent-dev libdumbnet-dev libpcap-dev libpcre3-dev libedit-dev bison flex libtool automake  
+>sudo apt-get install libevent-dev libdumbnet-dev libpcap-dev libpcre3-dev libedit-dev bison flex libtool automake  
 安装zlib https://zlib.net/zlib-1.2.11.tar.gz  
+git clone https://github.com/DataSoft/Honeyd.git  
 cd Honeyd  
 ./autogen.sh  
 ./configure  
