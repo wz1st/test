@@ -105,6 +105,7 @@ bind 172.31.1.15 windows
 bind 172.31.1.16 windows
 ```
 拓扑图如下：
+![拓扑图](https://raw.githubusercontent.com/wz1st/test/master/image/41530077_1.jpg)  
 
 启动```sudo honeyd -d -f test.conf```
 
