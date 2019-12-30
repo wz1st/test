@@ -1,4 +1,4 @@
-user: docker-compose up -d
+use: docker-compose up -d
 
 http://ip
 
