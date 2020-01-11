@@ -5,7 +5,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./mysql/:/var/lib/mysql/
+      - ./mysql/:/var/lib/mysql/ #save db data
     environment:
       - MYSQL_ROOT_PASSWORD=root
     container_name : mysql_server
